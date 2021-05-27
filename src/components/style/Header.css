@@ -10,3 +10,10 @@
     margin: 6px 0 10px 20px;
     height: 60px;
 }
+
+.Log_In{
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    left: 110em;
+}

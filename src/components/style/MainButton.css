@@ -11,18 +11,18 @@
 
 .Button p{
     color: white;
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin: 8px 50px;
-    padding-top: 5px;
+    padding-top: 2px;
     text-align: center;
 }
 
 .Button:hover{
-    background-color: blue;
+    background-color: rgb(34, 168, 209);
     border: 2px solid white;
     font-weight: bold;
 }
 
 .Button:hover{
-    color: teal;
+    color: black;
 }

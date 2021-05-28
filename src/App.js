@@ -6,6 +6,7 @@ import NewBadge from "./pages/NewBadge/NewBadge"
 import Login from "./pages/Accounts/Login"
 import Signin from "./pages/Accounts/Signin"
 import Select from "./pages/Main/Selection"
+import error from "./pages/Error_404/Error"
 
 
 function App() {
@@ -13,12 +14,12 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Switch>
-          <Route exact path="/" component={Main}></Route>
+          <Route exact path="/main" component={Main}></Route>
           <Route exact path="/select" component={Select}></Route>
           <Route exact path="/new" component={NewBadge}></Route>
-          <Route exact path="/Login" component={Login}></Route>
-          <Route exact path="/Signin" component={Signin}></Route>
-          <Route component={Error}></Route>
+          <Route exact path="/log_in" component={Login}></Route>
+          <Route exact path="/sign_in" component={Signin}></Route>
+          <Route exact path="/" component={error}></Route>
         </Switch>
       </Layout>
     </BrowserRouter>

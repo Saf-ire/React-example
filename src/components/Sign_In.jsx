@@ -54,7 +54,7 @@ class Sign_In extends React.Component{
                    />
                   </div>
               
-                  <button type="submit" className="Sign__button">Log in</button>
+                  <button type="submit" className="Sign__button">Sign in</button>
                </form>
            </div>
          </div>

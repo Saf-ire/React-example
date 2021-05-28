@@ -14,10 +14,10 @@ const Select = (props) => {
                             <Button contentText={"Badge"} link={"/new"}></Button>
                         </div>
                         <div className="col">
-                            <Button contentText={"Sign"} link={"/Signin"}></Button>
+                            <Button contentText={"Sign"} link={"/sign_in"}></Button>
                         </div>
                         <div className="col">
-                            <Button contentText={"Log"} link={"/Login"}></Button>
+                            <Button contentText={"Log"} link={"/log_in"}></Button>
                         </div>
                     </div>
                 </div>

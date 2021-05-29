@@ -1,8 +1,8 @@
 import React from "react"
-import Log_In from "../../components/Log_in"
+import Log_In from "../../components/Log_In"
 import Hero from "../../components/Hero"
 
-class Login extends React.Component{
+class LogIn extends React.Component{
 
 	render(){
 		return(
@@ -17,4 +17,4 @@ class Login extends React.Component{
 }
 
 
-export default Login
+export default LogIn

@@ -2,7 +2,7 @@ import React from "react"
 import Header_Img from "../images/badge_header.jpg"
 import "./style/Sign_In.css"
 
-class Sign_In extends React.Component{
+class Sign_Up extends React.Component{
     render(){
       return(
         <React.Fragment>
@@ -63,4 +63,4 @@ class Sign_In extends React.Component{
     }
   }
   
-  export default Sign_In
+  export default Sign_Up

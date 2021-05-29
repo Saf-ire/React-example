@@ -1,15 +1,15 @@
 import React from "react"
-import Sign_In from "../../components/Sign_In"
+import Sign_Up from "../../components/Sign_Up"
 import Hero from "../../components/Hero"
 
-class Signin extends React.Component{
+class SignUp extends React.Component{
 
 	render(){
 		return(
 			<React.Fragment>
 				<Hero h={"15vh"}></Hero>
 				<div className="container">
-					<Sign_In></Sign_In>
+					<Sign_Up></Sign_Up>
 				</div>
 			</React.Fragment>
 		)
@@ -17,4 +17,4 @@ class Signin extends React.Component{
 }
 
 
-export default Signin
+export default SignUp

@@ -1,5 +1,6 @@
 import React from "react"
 import Hero from "../../components/Hero"
+import Footer from "../../components/Footer"
 import Jeje from "../../images/Jeje.png"
 import "./Error.css"
 
@@ -12,6 +13,7 @@ const error = (props) => {
                     <img src={Jeje} alt="Ups"/>
                 </div>
                 <Hero h={"88vh"}></Hero>
+                <Footer s={{bottom:0}}></Footer>
             </div>
         </React.Fragment>
     )

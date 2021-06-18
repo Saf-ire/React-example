@@ -36,7 +36,7 @@ class Log_In extends React.Component{
                 <Button theme="Button-accounts" contentText={"Login"} link={"/badges"}></Button>
                 <div className="sign_up">
                  <h6>Don't you have an account?</h6>
-                 <h7>Click <a href={"/new"}>here</a></h7>
+                 <h7>Click <a href={"/sign_up"}>here</a></h7>
                 </div>
              </form>
          </div>

@@ -52,7 +52,7 @@ const BadgeList = (props) => {
 
 	const { query, setQuery, filteredBadges } = useSearchBadges(badges)
 
-	if (filteredBadges.lenght == 0) {
+	if (filteredBadges.lenght === 0) {
 		return (
 			<div>
 				<div className="form-group">

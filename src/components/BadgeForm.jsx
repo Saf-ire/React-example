@@ -1,6 +1,4 @@
 import React from "react"
-import Button from "./MainButton"
-import { Link } from "react-router-dom"
 import "./style/BadgeForm.css"
 
 class BadgeForm extends React.Component{

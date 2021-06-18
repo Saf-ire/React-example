@@ -10,12 +10,12 @@
 }
 
 .Main__title{
-    font-size: 5em;
+    font-size: 5.5em;
     color: white;
     font-weight: bold;
     text-shadow: 1px 4px 5px rgba(0,0,0,0.6);
 }
 .Main__content img{
-    width: 10%;
+    width: 20%;
     z-index: 3;
 }

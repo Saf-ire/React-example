@@ -31,24 +31,24 @@
 }
 
 .Badge__userImage{
+    display: flex;
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid black;
+    border: 5px solid white;
     background: white;
     align-self: center;
     overflow: hidden;
     position: absolute;
     top: -125px;
     left: 100px;
-    right: -120px;
     z-index: 1;
 }
 
 .Badge__userImage img{
-width: 100%;
-object-fit: cover;
-object-position: center;
+    width: 100%;
+   
+
 }
 
 .Badge__info{
@@ -61,7 +61,8 @@ object-position: center;
     color: rgb(150, 150, 150);
 }
 
-i{
+
+.i{
     font-style: normal;
     font-weight: 100;
     color: rgb(150, 150, 150);

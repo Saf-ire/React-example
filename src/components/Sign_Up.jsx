@@ -1,5 +1,6 @@
 import React from "react"
 import Header_Img from "../images/badge_header.jpg"
+import Button from "./MainButton"
 import "./style/Sign_In.css"
 
 class Sign_Up extends React.Component{
@@ -9,7 +10,7 @@ class Sign_Up extends React.Component{
          <div className="Sign__badge">
           <div className="SignForm m-5">
                <div className="header">
-                   <img src={Header_Img}/>
+                   <img src={Header_Img} alt="Header_Img"/>
                </div>
                <br></br>
                <form onSubmit={this.props.onSubmit}>
@@ -53,8 +54,8 @@ class Sign_Up extends React.Component{
                      name="email"
                    />
                   </div>
-              
-                  <button type="submit" className="Sign__button">Sign in</button>
+                  <Button type="submit" theme="Button-accounts" contentText="Sign Up" link="/log_in"></Button>
+                  <button type="submit" className="Sign__button" link="/log_in">Sign in</button>
                </form>
            </div>
          </div>

@@ -1,4 +1,6 @@
 import React from "react"
+import Button from "./MainButton"
+import { Link } from "react-router-dom"
 import "./style/BadgeForm.css"
 
 class BadgeForm extends React.Component{
@@ -26,38 +28,75 @@ class BadgeForm extends React.Component{
               	<input 
                   type="text"
                   className="form-control"
-                  name="profile_picture"
+                  name="profile_picture_url"
                   onChange={this.props.onChange}
-                  value={this.props.formValues.profile_picture}
+                  value={this.props.formValues.profile_picture_url}
                 />
-                    </div>
-                    <div className="form-group mb-2">
-                      <label className="mb-1">
-                        Badge Hero URL
-                      </label>
-                      	<input 
-                          type="text"
-                          className="form-control"
-                          name="header_picture"
-                          onChange={this.props.onChange}
-                          value={this.props.formValues.header_picture}
-                        />
-                    </div>
-                    <div className="form-group mb-2">
-                      <label className="mb-1">
-                        Title
-                      </label>
-                      <input 
-                        type="text"
-                        className="form-control"
-                        name="title"
-                        onChange={this.props.onChange}
-                        value={this.props.formValues.title}
-                      />
-                    </div>
-                    <button type="submit" className="Submit__button">Save</button>
-                </form>
-            </div>
+              </div>
+              <div className="form-group mb-2">
+                <label className="mb-1">
+                   Background URL
+                </label>
+                  <input 
+                     type="text"
+                     className="form-control"
+                     name="header_img_url"
+                     onChange={this.props.onChange}
+                     value={this.props.formValues.header_img_url}
+                  />
+               </div>
+               <div className="form-group mb-2">
+                <label className="mb-1">
+                  Title
+                </label>
+                <input 
+                  type="text"
+                  className="form-control"
+                  name="title"
+                  onChange={this.props.onChange}
+                  value={this.props.formValues.title}
+                />
+                </div>
+                <div className="form-group mb-2">
+                <label className="mb-1">
+                  Rank
+                </label>
+                <input 
+                  type="text"
+                  className="form-control"
+                  name="rank"
+                  onChange={this.props.onChange}
+                  value={this.props.formValues.rank}
+                />
+                </div>
+                <div className="form-group mb-2">
+                <label className="mb-1">
+                    Level
+                </label>
+                <input 
+                  type="text"
+                  className="form-control"
+                  name="level"
+                  onChange={this.props.onChange}
+                  value={this.props.formValues.level}
+                />
+                </div>
+                <div className="form-group mb-2">
+                <label className="mb-1">
+                    Missions
+                </label>
+                <input 
+                  type="text"
+                  className="form-control"
+                  name="missions"
+                  onChange={this.props.onChange}
+                  value={this.props.formValues.missions}
+                />
+                </div>
+                
+                <button type="submit" className="Submit__button">Save</button>
+            </form>
+        </div>
     	</React.Fragment>
     )
   }

@@ -1,0 +1,62 @@
+.BadgesListItem{
+    width: 600px;
+    height: 180px;
+    display: flex;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
+}
+
+.Item__background{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+
+.Item__background img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.Item__profilePicture{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: white;
+    align-self: center;
+    overflow: hidden;
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    z-index: 1;
+}
+
+.Item__profilePicture img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.List{
+    display: flex;
+    justify-content: center;
+}
+
+.BadgesList__container{
+    width: 35%;
+    margin-left: 610px;
+}
+
+.Badges__button{
+    margin-right: 220px;
+}

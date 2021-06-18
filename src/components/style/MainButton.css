@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    border: 2px solid white;
+    border: 2px solid lightgrey;
     border-radius: 40px;
     margin-top: 1em;
     background-color: rgba(133, 133, 133, 0.2);
@@ -24,5 +24,63 @@
 }
 
 .Button:hover{
+    color: black;
+}
+
+.Button-light{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 40px;
+    margin-top: 26px;
+    background-color: rgba(13, 194, 226, 0.466);
+}
+
+.Button-light p{
+    color: white;
+    font-size: 1em;
+    margin: 8px 50px;
+    padding-top: 2px;
+    text-align: center;
+}
+
+.Button-light:hover{
+    background-color: rgb(34, 168, 209);
+    border: 2px solid transparent;
+    font-weight: bold;
+}
+
+.Button-light:hover{
+    color: black;
+}
+
+.Button-accounts{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 40px;
+    margin-top: 26px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 65px;
+}
+
+.Button-accounts p{
+    color: black;
+    font-size: 1.1em;
+    margin: 4px 50px;
+    padding-top: 2px;
+    text-align: center;
+}
+
+.Button-accounts:hover{
+    font-weight: bold;
+}
+
+.Button-accounts:hover{
     color: black;
 }

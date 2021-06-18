@@ -1,5 +1,5 @@
 import React from "react"
-import Header_Img from "../images/badge_header.jpg"
+import Button from "./MainButton"
 import "./style/Log_in.css"
 
 class Log_In extends React.Component{
@@ -9,7 +9,7 @@ class Log_In extends React.Component{
        <div className="log__badge">
         <div className="LogForm m-5">
              <div className="header">
-                 <img src={Header_Img}/>
+                 <img src="https://64.media.tumblr.com/43073adb1ce9c1737f3e196a728cba13/tumblr_p6dkrou0Nf1vvri36o1_1280.jpg" alt="Header_Img"/>
              </div>
              <br></br>
         	 <form onSubmit={this.props.onSubmit}>
@@ -33,8 +33,11 @@ class Log_In extends React.Component{
                    name="password"
                  />
                 </div>
-            
-                <button type="submit" className="Login__button">Log in</button>
+                <Button theme="Button-accounts" contentText={"Login"} link={"/badges"}></Button>
+                <div className="sign_up">
+                 <h6>Don't you have an account?</h6>
+                 <h7>Click <a href={"/new"}>here</a></h7>
+                </div>
              </form>
          </div>
        </div>

@@ -8,9 +8,8 @@ const error = (props) => {
         <React.Fragment>
             <div className="Main">
                 <div className="Main__content">
-                    <h1 className="Main__title">404</h1>
                     <h1 className="Main__title">{props.title || "Not Found"}</h1>
-                    <img src={Jeje}/>
+                    <img src={Jeje} alt="Ups"/>
                 </div>
                 <Hero h={"88vh"}></Hero>
             </div>

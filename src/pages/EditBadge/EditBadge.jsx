@@ -10,7 +10,7 @@ import "../NewBadge/NewBadge.css"
 import api from "../../libs/fetch"
 import Footer from "../../components/Footer"
 
-class NewBadge extends React.Component {
+class EditBadge extends React.Component {
 
 	state = {
 		loading: false,
@@ -23,8 +23,20 @@ class NewBadge extends React.Component {
 			rank: "",
 			level: "",
 			missions: "",
-			post: "",
-			posts: "",
+		}
+	}
+
+	componentDidMount(){
+		this.fetchData()
+	}
+
+	fetchData = async () => {
+		this.setState({ loading: true, error: null })
+		try {
+			const data = await api.badges.read(this.props.match.params.badgeId)
+			this.setState({ loading: false, form: data })
+		} catch (error) {
+			this.setState({ loading: false, error: error })
 		}
 	}
 
@@ -42,10 +54,11 @@ class NewBadge extends React.Component {
 		this.setState({ loading: true, error: null })
 
 		try {
-			await api.badges.create(this.state.form)
+			await api.badges.update(this.props.match.params.badgeId, this.state.form)
 			this.setState({ loading: false, error: null })
 			this.props.history.push("/badges")
 		} catch (error) {
+			console.log(error)
 			this.setState({ loading: false, error: error })
 		}
 
@@ -53,17 +66,17 @@ class NewBadge extends React.Component {
 
 	render() {
 
-		if (this.state.loading) {
+		if(this.state.loading){
 			return <Loader></Loader>
 		}
 
-		if (this.state.error) {
+		if(this.state.error){
 			return <PageError error={this.state.error.message}></PageError>
 		}
 
 		return (
 			<React.Fragment>
-				<Hero h={"15vh"}></Hero>
+				<Hero h={"10vh"}></Hero>
 				<div className="container">
 					<div className="row">
 						<div className="col">
@@ -93,4 +106,4 @@ class NewBadge extends React.Component {
 	}
 }
 
-export default NewBadge
+export default EditBadge

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import HeroImage from "../images/Wallpaper.jpg"
 import "./style/Hero.css"
 

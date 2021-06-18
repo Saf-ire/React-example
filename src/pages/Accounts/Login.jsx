@@ -1,9 +1,8 @@
 import React from "react"
-import Log_In from "../../components/Log_In"
 import Hero from "../../components/Hero"
+import Log_In from "../../components/Log_In"
 
 class LogIn extends React.Component{
-
 	render(){
 		return(
 			<React.Fragment>

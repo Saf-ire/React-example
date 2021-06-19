@@ -5,8 +5,6 @@ import PageError from "../../components/PageError"
 import api from "../../libs/fetch"
 import "./Badges.css"
 
-{/*import Footer from '../../components/Footer'
-import Button from '../../components/MainButton'*/}
 class Badges extends React.Component{
 
 	state={

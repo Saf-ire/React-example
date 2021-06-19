@@ -1,6 +1,6 @@
 import React from "react"
 import Hero from "../../components/Hero"
-import Log_In from "../../components/Log_In"
+import Log from "../../components/Log_In"
 
 class LogIn extends React.Component{
 	render(){
@@ -8,7 +8,7 @@ class LogIn extends React.Component{
 			<React.Fragment>
 				<Hero h={"15vh"}></Hero>
 				<div className="container">
-					<Log_In></Log_In>
+					<Log></Log>
 				</div>
 			</React.Fragment>
 		)

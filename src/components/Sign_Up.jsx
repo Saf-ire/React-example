@@ -1,5 +1,4 @@
 import React from "react"
-import Header_Img from "../images/badge_header.jpg"
 import Button from "./MainButton"
 import "./style/Sign_Up.css"
 
